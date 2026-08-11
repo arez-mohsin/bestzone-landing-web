@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bz-blue: #168BE4;
+  --color-bz-blue-hover: #1171ba;
+  --color-bz-ink: #0A0F1C;
+  --color-bz-text: #64748b;
+  --color-bz-bg: #FFFFFF;
+  --color-bz-surface: #F8FAFC;
+  --color-bz-surface-subtle: #F1F5F9;
+  --color-bz-border: #E2E8F0;
+  --color-bz-dark: #060913;
+
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bz-bg);
+  color: var(--color-bz-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="ku"] body, html[lang="ar"] body,
+html[lang="ku"] h1, html[lang="ar"] h1,
+html[lang="ku"] h2, html[lang="ar"] h2,
+html[lang="ku"] h3, html[lang="ar"] h3,
+html[lang="ku"] h4, html[lang="ar"] h4,
+html[lang="ku"] h5, html[lang="ar"] h5,
+html[lang="ku"] h6, html[lang="ar"] h6,
+html[lang="ku"] button, html[lang="ar"] button,
+html[lang="ku"] a, html[lang="ar"] a {
+  font-family: 'Noto Sans Arabic', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.noise-bg {
+  position: relative;
+}
+
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: overlay;
+}
+
+.noise-bg-dark::before {
+  opacity: 0.06;
+  mix-blend-mode: soft-light;
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.glass-card-dark {
+  background-color: rgba(10, 15, 28, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}

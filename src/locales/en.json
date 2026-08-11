@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "about": "About Us",
+    "wholesale": "Wholesale",
+    "coverage": "Coverage",
+    "app": "App",
+    "contact": "Contact",
+    "contactBtn": "Contact Us",
+    "logo": "BestZone"
+  },
+  "hero": {
+    "badge": "PREMIUM MOBILE ACCESSORIES",
+    "title1": "Powering Connections.",
+    "title2": "Empowering Businesses.",
+    "desc": "BestZone is the definitive mobile accessories brand and wholesale partner across Iraq and Kurdistan — delivering quality, reliability, and unparalleled value.",
+    "btnApp": "Download App",
+    "btnAbout": "Learn About BestZone",
+    "floatingNum": "#1",
+    "floatingTitle": "Wholesale Choice",
+    "floatingDesc": "in Kurdistan & Iraq"
+  },
+  "benefits": {
+    "title": "Why choose BestZone?",
+    "subtitle": "The standards we uphold across every product.",
+    "b1Title": "PREMIUM QUALITY",
+    "b1Desc": "Carefully selected accessories built for everyday performance and long-lasting durability.",
+    "b2Title": "WHOLESALE ADVANTAGE",
+    "b2Desc": "Competitive margins and scalable partnership opportunities.",
+    "b3Title": "TRUSTED DISTRIBUTOR",
+    "b3Desc": "Reliable supply chain across Iraq.",
+    "b4Title": "DEDICATED SUPPORT",
+    "b4Desc": "Responsive, localized service focused on building long-term business relationships."
+  },
+  "about": {
+    "badge": "ABOUT BESTZONE",
+    "title1": "Built on Trust.",
+    "title2": "Driven by Quality.",
+    "desc": "BestZone connects customers, retailers, and businesses with carefully selected mobile accessories and dependable service. From everyday essentials to wholesale supply, our goal is simple: make quality products easier to access across Iraq and Kurdistan."
+  },
+  "wholesale": {
+    "badge": "WHOLESALE",
+    "title1": "Let's Build",
+    "title2": "Success Together.",
+    "desc": "BestZone empowers retailers, resellers, and business partners across Iraq and Kurdistan with aggressive wholesale pricing, dependable supply, and dedicated support.",
+    "li1": "Competitive wholesale pricing",
+    "li2": "Flexible partnership opportunities",
+    "li3": "Reliable product availability",
+    "li4": "Fast and dependable distribution",
+    "li5": "Marketing and product support",
+    "li6": "Dedicated business assistance",
+    "btnPartner": "Become a Partner",
+    "btnInquiry": "Wholesale Inquiry"
+  },
+  "app": {
+    "badge": "BESTZONE MOBILE APP",
+    "title1": "BestZone in",
+    "title2": "Your Pocket.",
+    "desc": "Discover BestZone, explore the latest accessories, stay connected with our offers, and access the BestZone experience directly from your phone.",
+    "appleSub": "Download on the",
+    "appleMain": "App Store",
+    "androidSub": "GET IT ON",
+    "androidMain": "Google Play",
+    "downloadOn": "Download on the",
+    "appStore": "App Store",
+    "getItOn": "GET IT ON",
+    "googlePlay": "Google Play"
+  },
+  "coverage": {
+    "title1": "Proudly Serving",
+    "title2": "Iraq & Kurdistan.",
+    "desc": "From wholesale distribution hubs in major cities to retail availability across the region, BestZone is always within reach.",
+    "kurdistan": "Kurdistan Region",
+    "iraq": "Iraq"
+  },
+  "contact": {
+    "title1": "Ready to Work With",
+    "title2": "BestZone?",
+    "desc": "Whether you're looking for premium mobile accessories, wholesale opportunities, or partnership support, our team is ready to help.",
+    "btnContact": "Contact Us",
+    "btnWhatsapp": "WhatsApp Us",
+    "modalTitle": "Contact Details",
+    "modalDesc": "Reach out to us through any of the following channels. Our team is always ready to assist you.",
+    "call": "Call Us",
+    "email": "Email Us",
+    "whatsapp": "WhatsApp",
+    "follow": "Follow Us"
+  },
+  "footer": {
+    "desc": "Empowering connections through premium mobile accessories.",
+    "company": "Company",
+    "contact": "Contact",
+    "social": "Social",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "© 2026 BestZone. All rights reserved.",
+    "partner": "Become a Partner",
+    "benefits": "Wholesale Benefits",
+    "contactSales": "Contact Sales",
+    "appHeader": "App",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  }
+}
