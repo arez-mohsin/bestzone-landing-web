@@ -23,6 +23,9 @@ const BrandStory = () => {
               <img
                 src="/about-image.png"
                 alt="About BestZone"
+                width="800"
+                height="800"
+                loading="lazy"
                 className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-bz-ink/20 to-transparent mix-blend-multiply pointer-events-none" />

@@ -85,6 +85,9 @@ const HeroSection = () => {
               <img
                 src="/hero-artwork.png"
                 alt="Premium Mobile Accessories"
+                width="800"
+                height="800"
+                fetchpriority="high"
                 className="w-full h-full object-contain object-center drop-shadow-[0_40px_80px_rgba(22,139,228,0.25)] rounded-3xl"
               />
             </motion.div>

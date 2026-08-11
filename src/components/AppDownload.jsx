@@ -33,6 +33,9 @@ const AppDownload = () => {
               <img
                 src="/apps_screenshot.jpg"
                 alt="BestZone Mobile App"
+                width="500"
+                height="650"
+                loading="lazy"
                 className="h-full w-auto object-contain drop-shadow-2xl rounded-3xl"
               />
             </div>

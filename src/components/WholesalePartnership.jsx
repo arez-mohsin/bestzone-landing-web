@@ -113,6 +113,9 @@ const WholesalePartnership = () => {
               <img 
                 src="/wholesale.png" 
                 alt="Business Partnership" 
+                width="800"
+                height="800"
+                loading="lazy"
                 className="w-full h-full object-cover object-center rounded-[2.5rem] opacity-90 mix-blend-luminosity hover:mix-blend-normal transition-all duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bz-dark/80 via-transparent to-transparent pointer-events-none"></div>

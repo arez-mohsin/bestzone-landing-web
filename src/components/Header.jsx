@@ -78,6 +78,7 @@ const Header = () => {
               <button 
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center gap-2 text-bz-text hover:text-bz-ink transition-colors p-2 rounded-full hover:bg-bz-surface"
+                aria-label="Toggle language menu"
               >
                 <Globe size={20} />
               </button>
@@ -118,6 +119,7 @@ const Header = () => {
           <button
             className="md:hidden text-bz-ink p-2"
             onClick={() => setIsMobileMenuOpen(true)}
+            aria-label="Open mobile menu"
           >
             <Menu size={24} />
           </button>
@@ -146,7 +148,7 @@ const Header = () => {
             >
               <div className="flex justify-between items-center mb-12">
                 <span className="text-2xl font-bold text-bz-blue">{t('nav.logo')}</span>
-                <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 text-bz-text bg-bz-surface rounded-full">
+                <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 text-bz-text bg-bz-surface rounded-full" aria-label="Close mobile menu">
                   <X size={20} />
                 </button>
               </div>
