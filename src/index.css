@@ -36,7 +36,7 @@ html[lang="ku"] h5, html[lang="ar"] h5,
 html[lang="ku"] h6, html[lang="ar"] h6,
 html[lang="ku"] button, html[lang="ar"] button,
 html[lang="ku"] a, html[lang="ar"] a {
-  font-family: 'Noto Sans Arabic', sans-serif !important;
+  font-family: 'Cairo', sans-serif !important;
 }
 
 h1,
