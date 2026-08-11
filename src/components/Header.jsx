@@ -39,12 +39,13 @@ const Header = () => {
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/90 backdrop-blur-md border-b border-bz-border shadow-sm py-4'
-          : 'bg-transparent py-6'
-        }`}
-    >
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
+            ? 'bg-white/90 backdrop-blur-md border-b border-bz-border shadow-sm py-4'
+            : 'bg-transparent py-6'
+          }`}
+      >
       <div className="container mx-auto px-6 max-w-[1280px]">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -122,15 +123,17 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      </header>
+
+      {/* Mobile Drawer (Moved outside header to prevent backdrop-filter containing block bug) */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <>
+          <div className="fixed inset-0 z-50">
             <motion.div
               initial={{ opacity: 0, filter: 'blur(4px)', willChange: 'transform, opacity, filter' }}
               animate={{ opacity: 1, filter: 'blur(0px)' }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/40 z-40 backdrop-blur-sm"
+              className="absolute inset-0 bg-black/40 backdrop-blur-sm"
               onClick={() => setIsMobileMenuOpen(false)}
             />
             <motion.div
@@ -138,7 +141,7 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-[80%] max-w-sm bg-white z-50 p-6 flex flex-col shadow-2xl"
+              className="absolute top-0 right-0 bottom-0 w-[80%] max-w-sm bg-white p-6 flex flex-col shadow-2xl"
             >
               <div className="flex justify-between items-center mb-12">
                 <span className="text-2xl font-bold text-bz-blue">{t('nav.logo')}</span>
@@ -185,10 +188,10 @@ const Header = () => {
                 </a>
               </div>
             </motion.div>
-          </>
+          </div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 };
 
