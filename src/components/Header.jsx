@@ -12,6 +12,7 @@ const Header = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    localStorage.setItem('bz_language', lng);
     setIsLangMenuOpen(false);
     setIsMobileMenuOpen(false);
   };

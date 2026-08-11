@@ -5,6 +5,8 @@ import enTranslation from './locales/en.json';
 import kuTranslation from './locales/ku.json';
 import arTranslation from './locales/ar.json';
 
+const savedLanguage = localStorage.getItem('bz_language') || 'en';
+
 i18n
   .use(initReactI18next)
   .init({
@@ -13,7 +15,7 @@ i18n
       ku: { translation: kuTranslation },
       ar: { translation: arTranslation }
     },
-    lng: 'en',
+    lng: savedLanguage,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false
